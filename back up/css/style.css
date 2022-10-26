@@ -1,0 +1,65 @@
+/* global */
+svg path{
+    fill: currentColor;
+}
+.bg-p {
+    background-color: #921009;
+}
+
+.bg-s {
+    background-color:#111a69;
+}
+
+.c-p {
+    color: #921009;
+}
+
+.c-s {
+    color: #111a69;
+}
+.vh-75{
+    height: 75vh;
+}
+.nav-svgs{
+    height: 30px;
+}
+/* end global */
+.carousel-image{
+    margin-top: 65px;
+    height: 75vh;
+    width: 100vw;
+        object-fit: cover;
+        object-position: center;
+}
+@media screen and (max-width:750px){
+    .carousel-image{
+        height: 50vh;
+    }
+}
+.navbar-image{
+    height: 10vh;
+}
+.product-img{
+    object-fit: contain;
+    object-position: center;
+    height: 150px;
+}
+.product-page-img{
+    object-fit: cover;
+    object-position: center;
+}
+.avatar-pic{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+.add-cart{
+    height: 30px;
+}
+.text-nav{
+    font-size: 1.3rem;
+}
+.stars{
+    height: 15px;
+}

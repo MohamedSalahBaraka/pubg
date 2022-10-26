@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alshply | الشبلي</title>
+    <!-- links for css -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-p fixed-top" id="navbar-b">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="javascript:void(0)"
+            >Alshply | الشبلي</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link text-uppercase text-nav text-white"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-uppercase text-nav text-white"
+                  >تواصل معنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="products.html"
+                  class="nav-link text-uppercase text-nav text-white"
+                  >بطاقات
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="products.html"
+                  class="nav-link text-uppercase text-nav text-white"
+                  >شحن عن طريق ال Id
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="products.html"
+                  class="nav-link text-uppercase text-nav text-white"
+                  >تسجيل الدخول
+                </a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#shopping-cart"
+              class="nav-link btn text-uppercase text-nav text-white me-3"
+            >
+              <svg viewBox="0 0 576 512" class="nav-svgs">
+                <path
+                  d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z"
+                />
+              </svg>
+              سلة المشتريات
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- cart modal -->
+    <div class="modal" id="shopping-cart">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">سلة المشتريات</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table id="cart-content" class="table">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>count</th>
+                  <th>game Money</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="btn btn-primary">Checkout</a>
+            <a href="#" id="clear-cart" class="btn btn-danger">Clear Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+    <main>
+      <section id="product">
+        <div class="container mt-5 pt-5 mb-5">
+          <div class="row mb-5">
+            <img
+              src="images/slide-2.png"
+              alt=""
+              id="product-image"
+              class="col-md-6 col-12 product-page-img"
+            />
+            <div class="col-md-6 col-12" id="product-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-black-50 text-small"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li class="breadcrumb-item text-black-50 text-small">
+                  شحن عن طريق ال id
+                </li>
+              </ul>
+              <div class="h5" id="product-name">شحن بوبجي عن طريق ال id</div>
+              <div>
+                <div class="product-rate d-inline-block" data-rate="3"></div>
+                <a href="#reviews">مراجعة واحدة</a>
+              </div>
+              <dl>
+                <dt>كيف تتم العملية</dt>
+                <dd>-قم باختيار المشتريات التي ترغب بها</dd>
+                <dd>-اذهب الي السلة في القائمة اعلى الشاشة في شريط المهام</dd>
+                <dd>
+                  - ان كنت تستعمل الهاتف تجد القائمة العليا على يسار شريط المهام
+                  على شكل ثلاثة خطوط اضغط عليها
+                </dd>
+                <dd>-اضغط على متابعة عملية الشراء</dd>
+                <dd>
+                  -سيتم اعادة توجيهك الي تطبيق واتس اب من هناك سيعتني بك موظفوا
+                  المتجر
+                </dd>
+              </dl>
+              <div>
+                <div class="h6 mb-2">عدد الجواهر</div>
+                <select name="" id="game-money" class="form-control">
+                  <option value="2000 جوهرة">2000 جوهرة</option>
+                  <option value="2000 جوهرة">2000 جوهرة</option>
+                  <option value="2000 جوهرة">2000 جوهرة</option>
+                  <option value="2000 جوهرة">2000 جوهرة</option>
+                </select>
+                <div class="h6 mb-2 mt-3">ID</div>
+                <input
+                  type="text"
+                  name=""
+                  id="customer-id"
+                  class="form-control"
+                />
+                <div class="row mt-3">
+                  <div class="col-6">
+                    <div class="h6 d-inline">السعر :</div>
+                    <div class="h6 d-inline" id="product-price">2000</div>
+                    <div class="h6 d-inline">SDG</div>
+                  </div>
+                  <div class="col-6">
+                    <label for="" class="form-label h6 d-inline"> الكمية</label>
+                    <input
+                      type="number"
+                      name=""
+                      value="1"
+                      id="count"
+                      class="form-control w-50 d-inline"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary rounded-pill mx-auto"
+                  data-id="6"
+                  id="add-to-cart"
+                  onclick="saveProduct()"
+                >
+                  إضافة الي السلة
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div id="reviews">
+            <div class="d-flex gap-3">
+              <img
+                src="images/R.png"
+                alt=""
+                class="rounded-circle avatar-pic bg-p"
+              />
+              <div>
+                <div class="h6">اسم مستخدم</div>
+                <div class="h6 text-black-50">22\2\2022</div>
+                <div class="product-rate d-inline-block" data-rate="5"></div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  aperiam pariatur cum labore voluptates delectus animi vitae
+                  nemo deleniti fuga consequatur, tenetur fugit atque doloribus!
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <img
+                src="images/R.png"
+                alt=""
+                class="rounded-circle avatar-pic bg-p"
+              />
+              <div>
+                <div class="h6">اسم مستخدم</div>
+                <div class="h6 text-black-50">22\2\2022</div>
+                <div class="product-rate d-inline-block" data-rate="4"></div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                  aperiam pariatur cum labore voluptates delectus animi vitae
+                  nemo deleniti fuga consequatur, tenetur fugit atque doloribus!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="h4">إضافة مراجعة</div>
+            <form action="">
+              <div class="h4">تقيمك</div>
+              <div class="review-rate d-inline-block"></div>
+              <div class="form-group">
+                <label for="" class="form-label h4">مراجعتك </label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="ارسال"
+                class="btn btn-primary rounded-pill mt-3"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="c-s vh-75 d-flex flex-row w-100 justify-content-center">
+        <div class="d-flex flex-column h-100 justify-content-center">
+          <div class="display-1 mb-5"><b> من نحن</b></div>
+          <div class="h1 ms-5">أنا جعلنا لنسهر على متعتك</div>
+          <div class="h1 ms-5">أشحن معنا وعش حياتك الهنيئة</div>
+        </div>
+      </section>
+      <footer class="bg-p d-flex flex-row justify-content-center">
+        <div class="text-white pt-5 pb-5 d-flex flex-column">
+          <div class="display-1 mb-2"><b> Alshply | الشبلي</b></div>
+          <div class="h6 mx-auto">Alshply | Copyright &copy; 2022 | الشبلي</div>
+          <div class="h6 mx-auto">
+            <a href="" class="text-white">سياسة الاستخدام</a>
+          </div>
+          <div class="h6 mx-auto">
+            <a href="" class="text-white">سياسة الاسترداد</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+      $(".product-rate").each(function (index) {
+        $(this).starRating({
+          starSize: 25,
+          initialRating: $(this).data("rate"),
+          starShape: "rounded",
+          emptyColor: "lightgray",
+          hoverColor: "salmon",
+          activeColor: "cornflowerblue",
+          readOnly: true,
+          callback: function (currentRating, $el) {
+            // make a server call here
+          },
+        });
+      });
+      $(".review-rate").starRating({
+        starSize: 25,
+        initialRating: 4,
+        starShape: "rounded",
+        emptyColor: "lightgray",
+        hoverColor: "salmon",
+        activeColor: "cornflowerblue",
+        callback: function (currentRating, $el) {
+          // make a server call here
+        },
+      });
+    </script>
+  </body>
+</html>
