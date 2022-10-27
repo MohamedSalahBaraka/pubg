@@ -23,6 +23,9 @@ svg path{
 .nav-svgs{
     height: 30px;
 }
+.z-index{
+    z-index: 10000;
+}
 /* end global */
 /* stars */
 .jq-stars {
@@ -99,4 +102,7 @@ svg path{
 }
 .stars{
     height: 15px;
+}
+.table-img{
+    width: 50px;
 }
